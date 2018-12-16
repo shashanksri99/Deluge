@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  deluge:
+    image: shashanksri99/deluge
+    build: .
+    network_mode: host
+    #environment:
+    #  - PUID=1001
+    #  - PGID=1001
+    #  - UMASK_SET=022
+    volumes:
+      #- /home/shashank/deluge:/config
+      #- /media/nas/Torrent:/downloads
+      - /home/shashank/Downloads:/downloads
+    #mem_limit: 4096m
+    #restart: always
