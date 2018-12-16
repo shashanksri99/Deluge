@@ -9,8 +9,5 @@ services:
     #  - PGID=1001
     #  - UMASK_SET=022
     volumes:
-      #- /home/shashank/deluge:/config
-      #- /media/nas/Torrent:/downloads
-      - /home/shashank/Downloads:/downloads
-    #mem_limit: 4096m
-    #restart: always
+      - /media/nas/Torrent:/downloads
+    restart: always
